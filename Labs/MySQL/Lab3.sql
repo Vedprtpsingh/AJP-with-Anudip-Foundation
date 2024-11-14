@@ -13,7 +13,6 @@ CREATE TABLE Department (department_id INT PRIMARY KEY,department_name VARCHAR(3
 -- Employees Table
 CREATE TABLE Employees (employee_id INT PRIMARY KEY,first_name VARCHAR(30),last_name VARCHAR(30),
 department_id INT,FOREIGN KEY (department_id) REFERENCES Department(department_id));
-
 -- Left Join Query
 SELECT Department.department_name, Employees.first_name, Employees.last_name
 FROM Department
